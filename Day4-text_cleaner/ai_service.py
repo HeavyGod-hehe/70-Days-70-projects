@@ -2,6 +2,7 @@ from google import genai
 from dotenv import load_dotenv
 import os
 import json
+from google.genai import errors
 
 
 
@@ -30,12 +31,19 @@ def clean_text(text):
     now clean this text:
     <user_text>{text}</user_text>
     Return only Valid JSON only. Dont Return Any Tags in The Return Response \n """
-    data = client.interactions.create(
-        model="gemini-3.8-flash",
-        input = prompt
-    )
+    try:
+        data = client.interactions.create(
+            model="gemini-3.8-flash",
+            input = prompt
+        )
+    except errors.APIError as exc:
+        raise RuntimeError("The AI Request Failed Please Try again Later") from exc
     output = data.output_text
-    return json.loads(output)
+    try:
+        result = json.loads(output)
+    except json.JSONDecodeError as exc:
+        raise ValueError("The AI returned invalid JSON") from exc
+    return result
 
 
 
