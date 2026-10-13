@@ -1,0 +1,21 @@
+Date,Product,Customer,Quantity_kg,Rate_per_kg,Paid
+2026-10-01,Atta,Rehmat Store,200,128,Yes
+2026-10-01,Maida,Bilal Bakery,100,150,No
+2026-10-02,Atta,Chaudhry Kiryana,300,126,Yes
+2026-10-02,Sooji,Madina Sweets,50,165,Yes
+2026-10-03,Chokar,Malik Dairy,400,62,No
+2026-10-03,Atta,Rehmat Store,150,128,No
+2026-10-04,Maida,Bilal Bakery,120,150,Yes
+2026-10-05,Atta,Al-Noor Hotel,250,125,Yes
+2026-10-05,Sooji,Madina Sweets,40,165,No
+2026-10-06,Chokar,Malik Dairy,300,62,Yes
+2026-10-07,Atta,Chaudhry Kiryana,350,126,No
+2026-10-07,Maida,Sabir Bakers,80,152,Yes
+2026-10-08,Atta,Al-Noor Hotel,200,125,Yes
+2026-10-08,Sooji,Sabir Bakers,30,166,No
+2026-10-09,Atta,Rehmat Store,180,128,Yes
+2026-10-09,Chokar,Malik Dairy,350,62,No
+2026-10-10,Maida,Bilal Bakery,90,150,No
+2026-10-10,Atta,Chaudhry Kiryana,400,126,Yes
+2026-10-11,Atta,Al-Noor Hotel,220,125,No
+2026-10-11,Sooji,Madina Sweets,60,165,Yes
